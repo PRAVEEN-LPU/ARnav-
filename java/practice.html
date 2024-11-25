@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <input type="text" onfocus="keypress()" id="txt">
+    <script>
+function keypress(){
+// alert ("Sumit project on time");
+        document.getElementById("txt").style.backgroundColor="red"
+}
+    </script> -->
+    <script>
+        function validateform(){
+            var n=document.myform.name.value;
+            var p=document.myform.password.value;
+
+            if (n==null || n==""){
+                alert("Name can't be blank");
+                return false;
+            }
+            else if (p.length<6){
+                alert("Must be 6 digit password");
+                return false;
+
+            }
+        }
+    </script>
+<form name="myform" onsubmit="return validateform()">
+ Name:   <input type="text" name="name" placeholder="Enter your name" >
+ <br>
+ <br>
+  Password:  <input type="password" name="password" placeholder="password" >
+  <br>
+   <input type="submit" value="register">
+</form>
+</body>
+</html>

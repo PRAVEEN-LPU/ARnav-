@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .border {
+            width: 100%;
+            border-radius: 5px;
+            border: 1px solid rgb(215, 213, 213);
+            margin-top: 5px;
+        }
+        .inline {
+            display: inline;
+        }
+        .radio-label {
+            margin: 0;
+        }
+        .hone {
+            margin-right: 0;
+        }
+    </style>
+</head>
+<body>
+    <table class="border">
+        <tr>
+            <td class="inline">
+                <label class="radio-label">
+                    <input type="radio" name="contact">Email
+                </label>
+            </td>
+            <td class="inline">
+                <label class="radio-label">
+                    <input type="radio" name="contact" class="hone">Phone
+                </label>
+            </td>
+        </tr>
+    </table>
+    <table class="border">
+        <tr>
+            <td><input type="checkbox" name="subscription">Subscription</td>
+        </tr>
+    </table>
+</body>
+</html>

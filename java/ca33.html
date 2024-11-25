@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            padding:10px;
+            border: 2px solid grey;
+            align-items: center;
+            border-spacing:10px;
+            background-color:lightcoral;
+        }
+        th,tr,td{
+            border:2px solid green;
+            text-align: center;
+        }
+        .s{
+            background-color: red;
+        }
+        .t{
+            background-color: rgb(143, 228, 8);
+        }
+        .d{
+            background-color: rgb(0, 247, 255);
+        }
+        .g{
+            background-color: rgb(255, 0, 200);
+        }
+.color{
+    background-color: aqua;
+}
+.col{
+    background-color: rgb(217, 255, 0);
+}
+.na{
+    background-color: rgb(0, 255, 21);
+}
+    </style>
+</head>
+<body>
+    <table>
+        <form>
+            <tr>
+                <th class="s">Student</th>
+                <th class="t">Subjects</th>
+                <th class="d">Marks</th>
+                <th class="g">Percentage</th>
+
+            </tr>
+            <tr class="color">
+                <td class="na" rowspan="2">Ram</td>
+                <td>Hindi</td>
+                <td>75</td>
+                <td rowspan="2">75%</td>
+            </tr>
+            <tr class="color">
+                <td>English</td>
+                <td>85</td>
+                
+            </tr>
+            <tr class="col">
+                <td rowspan="3">Shyam</td>
+                <td>Hindi</td>
+                <td>80</td>
+                <td rowspan="3">90%</td>
+            </tr>
+            <tr class="col">
+                <td>Maths</td>
+                <td>85</td>
+            </tr>
+            <tr class="col">
+                <td>English</td>
+                <td>75</td>
+            </tr>
+        </form>
+
+    </table>
+    
+</body>
+</html>
